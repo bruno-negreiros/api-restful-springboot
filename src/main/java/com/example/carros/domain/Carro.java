@@ -12,6 +12,7 @@ public class Carro {
 
 //    @Column(name = "nome") - Caso propriedade com o nome diferente da coluna da tabela.
     private String nome;
+    private String tipo;
 
 
     public Carro() {}
@@ -35,5 +36,13 @@ public class Carro {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }
