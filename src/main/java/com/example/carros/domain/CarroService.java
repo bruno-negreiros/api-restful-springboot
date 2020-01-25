@@ -23,19 +23,20 @@ public class CarroService {
         List<CarroDTO> list = new ArrayList<>();
 
         for (Carro c : carros) {
-            list.add(new CarroDTO(c));
+            list.add(CarroDTO.create(c));
         }
         return list;
 
-//        List<CarroDTO> list = carros.stream().map(c -> new CarroDTO(c)).collect(Collectors.toList());
+//        List<CarroDTO> list = carros.stream().map(c -> create CarroDTO(c)).collect(Collectors.toList());
 //        return list;
 //        ou
-//        return rep.findAll().stream().map(c -> new CarroDTO(c)).collect(Collectors.toList());
+//        return rep.findAll().stream().map(c -> create CarroDTO(c)).collect(Collectors.toList());
     }
 
     public Optional<CarroDTO> getCarroById(Long id) {
-//        return rep.findById(id).map(c -> new CarroDTO(c));
-        return rep.findById(id).map(CarroDTO::new);
+        return rep.findById(id).map(c -> CarroDTO.create(c));
+//        ou
+//        return rep.findById(id).map(CarroDTO::create);
     }
 
     public List<CarroDTO> getCarrosByTipo(String tipo) {
@@ -44,7 +45,7 @@ public class CarroService {
         List<CarroDTO> list = new ArrayList<>();
 
         for (Carro c : carros) {
-            list.add(new CarroDTO(c));
+            list.add(CarroDTO.create(c));
         }
         return list;
     }

@@ -1,4 +1,5 @@
 SEMPRE RETORNAR O STATUS CORRETO NOS RETORNOS DA API.
 
 Lombok gera métodos como contrutores, getters and setters, de forma automatizada apartir de 'marcações' nas classes.
-DTO é um objeto resumido de uma entidade do banco de dados. 
+DTO é um objeto resumido de uma entidade do banco de dados.
+MODELMAPPER permite converter uma entidade para um DTO de forma simplificada.
