@@ -28,7 +28,7 @@ public class CarrosController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Carro> get(@PathVariable("id") Long id)
+    public Optional<CarroDTO> get(@PathVariable("id") Long id)
     {
         return service.getCarroById(id);
     }
