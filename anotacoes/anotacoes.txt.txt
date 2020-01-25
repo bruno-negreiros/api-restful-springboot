@@ -1,1 +1,3 @@
 SEMPRE RETORNAR O STATUS CORRETO NOS RETORNOS DA API.
+
+Lombok gera métodos como contrutores, getters and setters, de forma automatizada apartir de 'marcações' nas classes.
