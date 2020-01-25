@@ -26,7 +26,6 @@ public class CarroService {
             list.add(CarroDTO.create(c));
         }
         return list;
-
 //        List<CarroDTO> list = carros.stream().map(c -> create CarroDTO(c)).collect(Collectors.toList());
 //        return list;
 //        ou
@@ -50,9 +49,9 @@ public class CarroService {
         return list;
     }
 
-    public Carro insert(Carro carro) {
+    public CarroDTO insert(Carro carro) {
         Assert.isNull(carro.getId(), "Não foi possível inserir o registro");
-        return rep.save(carro);
+        return CarroDTO.create(rep.save(carro));
     }
 
     public Carro update(Carro carro, Long id) {
