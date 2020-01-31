@@ -32,7 +32,7 @@ public class CarroService {
 //        return rep.findAll().stream().map(c -> create CarroDTO(c)).collect(Collectors.toList());
     }
 
-    public Optional<CarroDTO> getCarroById(Long id) {
+    public Optional<CarroDTO>   getCarroById(Long id) {
         return rep.findById(id).map(c -> CarroDTO.create(c));
 //        ou
 //        return rep.findById(id).map(CarroDTO::create);
