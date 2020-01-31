@@ -18,7 +18,7 @@ class CarrosApplicationTests {
 	private CarroService service;
 
 	@Test
-	public void teste1() {
+	public void testeSave() {
 		Carro 	carro = new Carro();
 		carro.setNome("Ferrari");
 		carro.setTipo("esportivos");
@@ -46,7 +46,8 @@ class CarrosApplicationTests {
 	}
 
 	@Test
-	void contextLoads() {
+	public void testeLista() {
+
 	}
 
 }
