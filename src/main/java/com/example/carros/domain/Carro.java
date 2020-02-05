@@ -18,9 +18,9 @@ public class Carro {
     private String nome; //    @Column(name = "nome") - Caso propriedade com o nome diferente da coluna da tabela.
     private String tipo;
     private String descricao;
-    private String urlFoto; // Não precisa escrever url_foto pois o hibernate traduz para o padrão java.
-    private String urlVideo;
-    private String latitude;
-    private String longitude;
+//    private String urlFoto; // Não precisa escrever url_foto pois o hibernate traduz para o padrão java.
+//    private String urlVideo;
+//    private String latitude;
+//    private String longitude;
 
 }
